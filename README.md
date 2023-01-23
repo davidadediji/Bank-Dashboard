@@ -1,1 +1,4 @@
-A repo showing various bash scripts
+## DevOps Notes
+
+Docker for developers - LinkedIn Learning
+
