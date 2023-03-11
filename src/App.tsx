@@ -1,13 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-
 function App() {
-
-  return (
-    <div className=' bg-blue-800'>
-      <p>This is </p>
+return (
+    <div className=' bg-blue-700'>
+        <p className='text-4xl'>My name is David</p>
     </div>
-  )
+);
 }
 
-export default App
+export default App;
