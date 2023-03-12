@@ -1,6 +1,6 @@
 import Sidebar from "./components/layouts/sidebar";
 import Navbar from "./components/layouts/navbar";
-function App() {
+export default function App() {
 return (
     <div className='font-poppins flex'>
         <Sidebar/>
@@ -8,5 +8,3 @@ return (
     </div>
 );
 }
-
-export default App;

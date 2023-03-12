@@ -1,14 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { GrNotification, GrSearch } from 'react-icons/gr';
+import ProfileAvatar from '../../assets/images/avatar.png';
 
 export default function Navbar() {
-  return (
-		<nav className='pt-[36.56px] pb-[22.14px] flex justify-between border border-red-600 w-full pr-3'>
-			<section className=' text-openpay-dark-black font-extrabold'>My Card</section>
-			<ul className='flex gap-2'>
-				<li>search</li>
-				<li>notify</li>
-				<li className='last:gap-0'>avatar</li>
-			</ul>
+	return (
+		<nav className='border border-red-600 w-full'>
+			<section className='flex justify-between pt-[36.56px] pb-[22.14px] border border-red-500 px-[21.94px]'>
+				<h2 className=' text-openpay-dark-black font-gilroy-semibold font-bold text-[17.55px]'>
+					My Card
+				</h2>
+				<ul className='flex gap-4 items-center '>
+					<li>
+						<GrSearch />
+					</li>
+					<li>
+						<GrNotification />
+					</li>
+					<li className='last:gap-0'>
+						<img src={ProfileAvatar} alt='' />
+					</li>
+				</ul>
+			</section>
 		</nav>
 	);
 }

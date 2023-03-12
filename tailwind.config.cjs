@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				poppins: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+				'gilroy-semibold':['"Gilroy-Semibold"', 'sans-serif']
 			},
 			colors: {
 				'openpay-gray': '#131635',
