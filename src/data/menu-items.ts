@@ -1,4 +1,9 @@
-import {Home} from 'react-feather'
+import Home from '../assets/icons/home.svg'
+import Invoice from '../assets/icons/invoice.svg'
+import Message from '../assets/icons/messages.svg'
+import Wallet from '../assets/icons/wallets.svg'
+import Activity from '../assets/icons/activity.svg'
+import Analytics from '../assets/icons/analytics.svg'
 
 interface IMenuItems {
     icon?: any
@@ -11,27 +16,27 @@ export const menuItems: IMenuItems[] = [
 	},
 
 	{
-		icon: '',
+		icon: Invoice,
 		itemName: 'Invoices',
 	},
 
 	{
-		icon: '',
+		icon: Message,
 		itemName: 'Messages',
 	},
 
 	{
-		icon: '',
+		icon: Wallet,
 		itemName: 'My Wallets',
 	},
 
 	{
-		icon: '',
+		icon: Activity,
 		itemName: 'Activity',
 	},
 
 	{
-		icon: '',
+		icon: Analytics,
 		itemName: 'Analytics',
 	},
 ];
