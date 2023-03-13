@@ -13,7 +13,8 @@ module.exports = {
 				'openpay-blue': '#0177FB',
 				'openpay-light-blue': '#E5F1FF',
 				'openpay-dark-black': '#000',
-				'openpay-primary': '#343744',
+				'openpay-primary-dark': '#343744',
+				'openpay-primary-gray': '#5E636A',
 			},
 			backgroundImage: {
 				'openpay-image': "url('../src/assets/images/visacard.svg')",

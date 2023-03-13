@@ -1,3 +1,5 @@
+import {Bitcoin, Jane, Paypal} from '../assets'
+
 type status = 'success' | 'pending' | 'declined';
 
 export interface IRecentTransactions {
@@ -11,7 +13,7 @@ export interface IRecentTransactions {
 
 export const recentTransactions: IRecentTransactions[] = [
 	{
-		image: '',
+		image: Bitcoin,
 		transactionName: 'Bitcoin Transactions',
 		date: 'Jan 16, 2020',
 		accountNumber: '*****45242',
@@ -19,7 +21,7 @@ export const recentTransactions: IRecentTransactions[] = [
 		transactionStatus: 'success',
 	},
 	{
-		image: '',
+		image: Jane,
 		transactionName: 'Sent to anitonia',
 		date: 'Jan 16, 2020',
 		accountNumber: '*****87212',
@@ -27,7 +29,7 @@ export const recentTransactions: IRecentTransactions[] = [
 		transactionStatus: 'pending',
 	},
 	{
-		image: '',
+		image: Paypal,
 		transactionName: 'Withdraw Paypal',
 		date: 'Jan 16, 2020',
 		accountNumber: '*****36275',
