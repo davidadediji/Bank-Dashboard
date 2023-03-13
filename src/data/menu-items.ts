@@ -5,7 +5,7 @@ import Wallet from '../assets/icons/wallets.svg'
 import Activity from '../assets/icons/activity.svg'
 import Analytics from '../assets/icons/analytics.svg'
 
-interface IMenuItems {
+export interface IMenuItems {
     icon?: any
     itemName: string
 }

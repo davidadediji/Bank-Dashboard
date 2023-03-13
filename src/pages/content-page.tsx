@@ -1,10 +1,10 @@
 import Sidebar from '../components/layouts/sidebar';
-import Navbar from '../components/layouts/navbar';
+import Dashboard from '../components/layouts/dashboard';
 export default function ContentPage() {
 	return (
 		<div className='font-poppins flex'>
 			<Sidebar />
-			<Navbar />
+			<Dashboard/>
 		</div>
 	);
 }
