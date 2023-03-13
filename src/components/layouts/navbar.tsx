@@ -5,7 +5,7 @@ import ProfileAvatar from '../../assets/images/avatar.png';
 export default function Navbar() {
 	return (
 		<nav className='w-full'>
-			<section className='flex justify-between pt-[36.56px] pb-[22.14px] border border-red-500 px-[21.94px]'>
+			<section className='flex justify-between pt-[36.56px] pb-[22.14px] px-[21.94px]'>
 				<h2 className=' text-openpay-dark-black font-gilroy-semibold font-bold text-[17.55px]'>
 					My Card
 				</h2>

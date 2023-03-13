@@ -7,7 +7,7 @@ export default function Dashboard() {
   return (
     <div className='border border-red-600 w-full'>
       <Navbar/>
-      <div className='flex'>
+      <div className='flex border border-purple-700'>
         <Transaction/>
         <Analytics/>
       </div>
