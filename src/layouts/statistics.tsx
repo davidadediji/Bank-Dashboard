@@ -1,5 +1,5 @@
 import React from 'react';
-import { stats } from '../../data/stats';
+import { stats } from '../data/stats';
 
 export default function Statistics() {
 	return (

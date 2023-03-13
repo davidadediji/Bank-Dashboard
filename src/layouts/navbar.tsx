@@ -1,6 +1,6 @@
 import React from 'react';
 import { GrNotification, GrSearch } from 'react-icons/gr';
-import ProfileAvatar from '../../assets/images/avatar.png';
+import ProfileAvatar from '../assets/images/avatar.png';
 
 export default function Navbar() {
 	return (

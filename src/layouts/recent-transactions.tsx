@@ -1,5 +1,5 @@
 import React from 'react';
-import { recentTransactions } from '../../data/recent-transactions';
+import { recentTransactions } from '../data/recent-transactions';
 
 export default function RecentTransactions() {
 	return (

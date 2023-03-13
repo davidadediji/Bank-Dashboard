@@ -7,6 +7,11 @@ import Bitcoin from '../assets/images/bitcoin.png';
 import Jane from '../assets/images/jane.png';
 import Paypal from '../assets/images/paypal.png';
 
+import Send from '../assets/icons/quick-transfer-vector1.svg';
+import Receive from '../assets/icons/quick-transfer-vector2.svg';
+import Invoicing from '../assets/icons/quick-transfer-vector3.svg';
+import More from '../assets/icons/quick-transfer-vector4.svg';
+
 export {
 	StatsForCustomers,
 	StatsForDonations,
@@ -14,5 +19,9 @@ export {
 	StatsForWatchtime,
     Bitcoin,
     Jane,
-    Paypal
+    Paypal,
+	Send,
+	Receive,
+	Invoicing,
+	More
 };

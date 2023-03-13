@@ -1,6 +1,6 @@
 import React from 'react';
-import OpenPayLogo from '../../assets/openpay.svg';
-import { menuItems } from '../../data/menu-items';
+import OpenPayLogo from '../assets/openpay.svg';
+import { menuItems } from '../data/menu-items';
 import { AiOutlineExclamationCircle, AiOutlineSetting } from 'react-icons/ai';
 
 export default function Sidebar() {

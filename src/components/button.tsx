@@ -1,9 +1,14 @@
 import React from 'react'
 
-const button = () => {
+type ButtonProps = {
+  text:string;
+  style?:string;
+}
+
+const Button = ({text, style}:ButtonProps) => {
   return (
-    <div>button</div>
+    <button className={style}>{text}</button>
   )
 }
 
-export default button;
+export default Button;
