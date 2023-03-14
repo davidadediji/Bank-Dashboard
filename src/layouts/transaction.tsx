@@ -1,7 +1,7 @@
 import Visa from '../assets/icons/visalogo.svg';
 import { actions } from '../data/actions';
-import Button from '../components/button'
-import Input from '../components/input';
+import Button from '../components/Button'
+import Input from '../components/Input';
 
 export default function Transaction() {
 	return (
