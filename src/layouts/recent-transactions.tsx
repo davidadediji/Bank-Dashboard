@@ -11,7 +11,7 @@ export default function RecentTransactions() {
 			<table className='w-full text-openpay-primary text-xs mt-5 border-separate new '>
 				<tbody>
 					{recentTransactions.map((item) => (
-						<tr className=''>
+						<tr className='' key={item.transactionName}>
 							<td className='flex items-center gap-3 pr-[3px]'>
 								<img src={item.image} alt='' />
 								<p>{item.transactionName}</p>

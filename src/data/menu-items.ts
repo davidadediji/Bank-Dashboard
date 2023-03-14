@@ -7,36 +7,43 @@ import Analytics from '../assets/icons/analytics.svg'
 
 export interface IMenuItems {
     icon?: any
+	path:string
     itemName: string
 }
 export const menuItems: IMenuItems[] = [
 	{
 		icon: Home,
+		path:"/",
 		itemName: 'Dashboard',
 	},
 
 	{
 		icon: Invoice,
+		path:"/invoice",
 		itemName: 'Invoices',
 	},
 
 	{
 		icon: Message,
+		path:"/message",
 		itemName: 'Messages',
 	},
 
 	{
 		icon: Wallet,
+		path:'wallet',
 		itemName: 'My Wallets',
 	},
 
 	{
 		icon: Activity,
+		path: '/activity',
 		itemName: 'Activity',
 	},
 
 	{
 		icon: Analytics,
+		path:'/analytics',
 		itemName: 'Analytics',
 	},
 ];

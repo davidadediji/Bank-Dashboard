@@ -9,9 +9,9 @@ export default function Statistics() {
 					Statistics
 				</p>
 				<div className='flex justify-between'>
-					{stats.map((item) => {
+					{stats.map((item, index) => {
 						return (
-							<div className='flex items-center'>
+							<div className='flex items-center' key={index}>
 								<div className=' w-10 h-10 border-orange-600 border rounded-full flex justify-center items-center mr-[5.85px]'>
 									<img src={item.icon} alt='' />
 								</div>
@@ -27,6 +27,5 @@ export default function Statistics() {
 				</div>
 			</section>
 		</section>
-		// <div className='border border-red-300 w-96'>Statistics</div>
 	);
 }
