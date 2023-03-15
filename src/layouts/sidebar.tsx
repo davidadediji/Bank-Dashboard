@@ -5,8 +5,8 @@ import { AiOutlineExclamationCircle, AiOutlineSetting } from 'react-icons/ai';
 
 export default function Sidebar() {
 	return (
-		<section className=' w-56 border-r border-[#E8ECF5] h-screen flex flex-col  gap-10'>
-			<section className='flex mt-6 text-openpay-dark font-semibold items-center pl-8 gap-2 cursor-pointer'>
+		<section className=' w-56 border-r border-[#E8ECF5] h-screen flex flex-col'>
+			<section className='flex mt-6 mb-6 text-openpay-dark font-semibold items-center pl-8 gap-2 cursor-pointer'>
 				<section>
 					<img src={OpenPayLogo} alt='' />
 				</section>
@@ -32,7 +32,7 @@ export default function Sidebar() {
 				})}
 			</ul>
 
-			<ul className='text-openpay-gray font-normal text-sm mt-[360px] mb-[70px]'>
+			<ul className='text-openpay-gray font-normal text-base mt-[345px] mb-[70px] flex flex-col gap-4'>
 				<li className='flex items-center cursor-pointer '>
 					<p className='flex ml-9 gap-2 w-[137.8px] pl-3 py-2 items-center'>
 						<AiOutlineExclamationCircle className='text-lg' />

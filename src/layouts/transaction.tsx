@@ -9,7 +9,7 @@ import { Astrid } from '../assets';
 export default function Transaction() {
 	return (
 		<section className=' flex flex-col gap-5 font-gilroy-semibold ml-16'>
-			<section className=' flex flex-col justify-between bg-openpay-image bg-cover bg-no-repeat w-full h-[180px] text-white rounded-sm px-8 pt-6 pb-5'>
+			<section className=' flex flex-col justify-between bg-openpay-image bg-no-repeat w-full h-[13.30rem] bg-cover text-white rounded-sm px-8 pt-6 pb-5'>
 				<div>
 					<p className='text-[8.77px]'>Name</p>
 					<p className='text-[13.66px]'>Carla Rosser</p>
@@ -31,15 +31,15 @@ export default function Transaction() {
 					<Input />
 				</div>
 				<div className='flex justify-between items-center'>
-					<p className='flex gap-4 my-6'>
+					<p className='flex gap-4 my-6 items-center'>
 						<img src={Astrid} alt="" />
-						<span>Astrid Hayes</span>
+						<span className='text-sm'>Astrid Hayes</span>
 					</p>
 					<AiOutlinePlusCircle className='text-xl bg-openpay-light-blue text-openpay-blue'/>
 				</div>
 				<Button
 					text='Send Money'
-					style='bg-openpay-btn-blue text-[#fff] w-full border rounded-lg text-sm py-6'
+					style='bg-openpay-btn-blue text-[#fff] w-full border rounded-lg text-sm py-4'
 				/>
 			</section>
 			<section className='w-full h-[253.74px] px-16'>
