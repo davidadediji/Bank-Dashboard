@@ -3,7 +3,7 @@ import { recentTransactions } from '../data/recent-transactions';
 
 export default function RecentTransactions() {
 	return (
-		<section>
+		<>
 			<section className='flex justify-between items-center'>
 				<p className='text-[1.006rem] text-[#000]'>Recent Transactions</p>
 				<p className=' text-openpay-primary-gray text-xs'>View all &#62;</p>
@@ -19,11 +19,19 @@ export default function RecentTransactions() {
 							<td className='px-[10px]'>{item.date}</td>
 							<td className='px-[10px]'>{item.accountNumber}</td>
 							<td className='px-[10px]'>{item.transactionAmount}</td>
-							<td className='px-[10px]'>{item.transactionStatus}</td>
+							<td
+								className={
+									item.transactionStatus === 'success'
+										? ' text-openpay-transaction-text-success bg-openpay-transaction-success text-center'
+										: 'text-openpay-transaction-text-pending bg-openpay-transaction-pending text-center'
+								}
+							>
+								{item.transactionStatus}
+							</td>
 						</tr>
 					))}
 				</tbody>
 			</table>
-		</section>
+		</>
 	);
 }

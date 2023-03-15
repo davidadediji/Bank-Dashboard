@@ -1,7 +1,8 @@
 import React from 'react'
 
 export default function ErrorPage() {
+
   return (
-    <div>ErrorPage</div>
+    <div>404 Page does not exist</div>
   )
 }

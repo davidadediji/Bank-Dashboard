@@ -1,7 +1,7 @@
-import StatsForCustomers from '../assets/icons/stats-customers.svg';
-import StatsForDonations from '../assets/icons/stats-donate.svg';
-import StatsForRemittance from '../assets/icons/stats-remittance.svg';
-import StatsForWatchtime from '../assets/icons/stats-watchtime.svg';
+import StatsForCustomers from '../assets/icons/statsforcustomers.svg';
+import StatsForDonations from '../assets/icons/statsfordonations.svg';
+import StatsForRemittance from '../assets/icons/statsforremittance.svg';
+import StatsForWatchtime from '../assets/icons/statsforwatchtime.svg';
 import Debit from '../assets/icons/debit.svg';
 
 import Bitcoin from '../assets/images/bitcoin.png';

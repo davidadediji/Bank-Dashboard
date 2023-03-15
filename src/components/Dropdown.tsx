@@ -13,10 +13,10 @@ export const Dropdown = () => {
 				<img src={Debit} alt='' />
 				<span>Debit</span>
 			</label>
-			<select id='dropdown' value={selectedOption} onChange={handleChange}>
-				<option value='option1'>Option 1</option>
-				<option value='option2'>Option 2</option>
-				<option value='option3'>Option 3</option>
+			<select id='dropdown' value={selectedOption} onChange={handleChange} className='outline-none'>
+				<option value='trans-1'>10.680</option>
+				<option value='trans-1'>10.681</option>
+				<option value='trans-1'>10.682</option>
 			</select>
 		</div>
 	);

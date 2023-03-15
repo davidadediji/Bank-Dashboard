@@ -12,7 +12,19 @@ export default function Statistics() {
 					{stats.map((item, index) => {
 						return (
 							<div className='flex items-center' key={index}>
-								<div className=' w-10 h-10 border-orange-600 border rounded-full flex justify-center items-center mr-[5.85px]'>
+								<div
+									className={
+										item.type === 'Customers'
+											? ' w-12 h-12 rounded-full flex justify-center items-center mr-[5.85px] bg-openpay-stats-customers'
+											: item.type === 'Remittance'
+											? ' w-12 h-12 rounded-full flex justify-center items-center mr-[5.85px] bg-openpay-stats-remittances'
+											: item.type === 'Donation'
+											? ' w-12 h-12 rounded-full flex justify-center items-center mr-[5.85px] bg-openpay-stats-donations'
+											: item.type === 'WatchTime'
+											?' w-12 h-12 rounded-full flex justify-center items-center mr-[5.85px] bg-openpay-stats-watchtime'
+											:''
+									}
+								>
 									<img src={item.icon} alt='' />
 								</div>
 								<ul>
