@@ -28,7 +28,7 @@ export default function ChartComponent() {
 	});
 
 	return (
-		<div className='App'>
+		<div className=' w-[50%]'>
 			<PieChart ChartData={chartData} />
 		</div>
 	);
