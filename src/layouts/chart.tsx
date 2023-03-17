@@ -4,6 +4,7 @@ import { CategoryScale } from 'chart.js';
 import { useState } from 'react';
 import { Data } from '../data/chart-data';
 import PieChart from '../charts/PieChart';
+import LineChart from '../charts/LineChart';
 
 Chart.register(CategoryScale);
 
@@ -29,7 +30,9 @@ export default function ChartComponent() {
 
 	return (
 		<div className=' w-[50%]'>
-			<PieChart ChartData={chartData} />
+      <p>Money Flow</p>
+			{/* <PieChart ChartData={chartData} /> */}
+      <LineChart ChartData={chartData}/>
 		</div>
 	);
 }

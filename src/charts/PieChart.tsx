@@ -4,7 +4,6 @@ import { Pie } from 'react-chartjs-2';
 export default function PieChart({ChartData}) {
  return (
 		<div className='chart-container'>
-			<h2>Money Flow</h2>
 			<Pie
 				data={ChartData}
 				options={{
