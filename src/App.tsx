@@ -1,16 +1,21 @@
+import { useState } from 'react';
 import Dashboard from './pages/dashboard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import MainLayout from './layouts/MainLayout';
-import ErrorPage from './pages/error';
+import Sidebar from './components/Sidebar';
 export default function App() {
 	return (
 		<BrowserRouter>
-			<Routes>
-				<Route path='/' element={<MainLayout />}>
-					<Route path='/' element={<Dashboard />} />
-					<Route path='*' element={<ErrorPage />} />
-				</Route>
-			</Routes>
+			<div className='flex'>
+				<Sidebar />
+
+				<div>
+					<Routes>
+						<Route path='/' element={<Dashboard />} />
+						<Route path='/dashboard' element={<Dashboard />} />
+						<Route path='*' element='404: Page Not Found' />
+					</Routes>
+				</div>
+			</div>
 		</BrowserRouter>
 	);
 }
