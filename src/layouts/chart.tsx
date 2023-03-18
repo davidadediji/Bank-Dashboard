@@ -30,9 +30,9 @@ export default function ChartComponent() {
 
 	return (
 		<div className=' w-[50%]'>
-      <p>Money Flow</p>
+			<p>Money Flow</p>
 			{/* <PieChart ChartData={chartData} /> */}
-      <LineChart ChartData={chartData}/>
+			<LineChart ChartData={chartData} />
 		</div>
 	);
 }
