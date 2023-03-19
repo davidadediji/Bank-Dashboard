@@ -1,5 +1,5 @@
 import React from 'react'
-import LineChart from './charts/PieChart';
+import LineChart from './charts/LineChart';
 
 export default function MoneyFlow() {
   return (
