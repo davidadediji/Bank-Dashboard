@@ -7,7 +7,7 @@ export default function Dashboard() {
   return (
 		<div className='h-screen px-3 font-gilroy-semibold'>
 			<Navbar />
-			<div className=' grid-cols-12 grid gap-16'>
+			<div className=' grid-cols-12 grid gap-12'>
 				<Transactions />
 				<Analytics />
 			</div>
