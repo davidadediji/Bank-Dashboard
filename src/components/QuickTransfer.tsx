@@ -6,7 +6,7 @@ import Input from './Input';
 export default function QuickTransfer() {
   return (
 		<section className='w-full h-[253.74px] px-20'>
-			<p className='text-base text-[#141736] mb-3'>Quick Transfer</p>
+			<p className='text-sm text-[#141736] mb-3'>Quick Transfer</p>
 			<div>
 				<Dropdown />
 				<Input />

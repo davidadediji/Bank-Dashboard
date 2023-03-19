@@ -5,7 +5,7 @@ import Transactions from '../layout/dashboard-transactions';
 
 export default function Dashboard() {
   return (
-		<div className='border border-red-600 h-screen px-3 font-gilroy-semibold'>
+		<div className='h-screen px-3 font-gilroy-semibold'>
 			<Navbar />
 			<div className=' grid-cols-12 grid gap-16'>
 				<Transactions />

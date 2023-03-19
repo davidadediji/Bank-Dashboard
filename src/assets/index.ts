@@ -12,6 +12,7 @@ import More from './icons/quick-transfer-vector4.svg';
 import Jane from './images/jane.png'
 import PayPal from './images/paypal.png'
 import Bitcoin from './images/bitcoin.png'
+import Astrid from './images/astrid.png'
 
 
 
@@ -27,5 +28,6 @@ export {
     Send,
     Receive,
     Invoicing,
-    More
+    More,
+    Astrid
 }
