@@ -11,7 +11,7 @@ export default function SendMoney() {
 			<p className='text-[#141736] text-[15px] pt-2 mb-2'>Send Money</p>
 			<div>
 				<Dropdown />
-				<Input />
+				<Input type='number' defaultValue={102.65} />
 			</div>
 			<div className='flex justify-between items-center'>
 				<p className='flex gap-4 my-3 items-center'>

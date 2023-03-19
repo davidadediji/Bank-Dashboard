@@ -9,7 +9,7 @@ export default function QuickTransfer() {
 			<p className='text-sm text-[#141736] mb-3'>Quick Transfer</p>
 			<div>
 				<Dropdown />
-				<Input />
+				<Input type='number' defaultValue={102.65}/>
 			</div>
 			<ul className='flex justify-between text-[#798BA3] text-[0.594rem] gap-2 pt-4'>
 				{actions.map((action, index) => (
