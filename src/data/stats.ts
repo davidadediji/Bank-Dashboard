@@ -1,4 +1,4 @@
-import {StatsForCustomers, StatsForDonations, StatsForRemittance, StatsForWatchtime} from '../assets'
+import { Customers, Donate, Remittance, Watchtime } from '../assets';
 export interface IMenuItems {
 	icon?: any;
 	color: string;
@@ -7,29 +7,29 @@ export interface IMenuItems {
 }
 export const stats: IMenuItems[] = [
 	{
-		icon: StatsForCustomers,
-    color: "string",
+		icon: Customers,
+		color: 'string',
 		subscriberCount: '220k',
 		type: 'Customers',
 	},
 
 	{
-		icon: StatsForRemittance,
-    color: "string",
+		icon: Remittance,
+		color: 'string',
 		subscriberCount: '230k',
 		type: 'Remittance',
 	},
 
 	{
-		icon: StatsForDonations,
-    color: "string",
+		icon: Donate,
+		color: 'string',
 		subscriberCount: '270k',
 		type: 'Donation',
 	},
 
 	{
-		icon: StatsForWatchtime,
-    color: "string",
+		icon: Watchtime,
+		color: 'string',
 		subscriberCount: '130k',
 		type: 'WatchTime',
 	},

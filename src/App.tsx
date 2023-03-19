@@ -7,7 +7,7 @@ export default function App() {
 		<BrowserRouter>
 			<div className='flex'>
 				<Sidebar />
-				<div className='w-5/6'>
+				<div className=' w-5/6'>
 					<Routes>
 						<Route path='/' element={<Dashboard />} />
 						<Route path='/dashboard' element={<Dashboard />} />

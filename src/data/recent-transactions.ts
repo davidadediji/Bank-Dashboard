@@ -1,4 +1,4 @@
-import {Bitcoin, Jane, Paypal} from '../assets'
+import {Bitcoin, Jane, PayPal} from '../assets'
 
 type status = 'success' | 'pending' | 'declined';
 
@@ -29,7 +29,7 @@ export const recentTransactions: IRecentTransactions[] = [
 		transactionStatus: 'pending',
 	},
 	{
-		image: Paypal,
+		image: PayPal,
 		transactionName: 'Withdraw Paypal',
 		date: 'Jan 16, 2020',
 		accountNumber: '*****36275',

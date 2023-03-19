@@ -1,23 +1,23 @@
-// import {Send, Receive, Invoicing, More} from '../assets'
+import {Send, Receive, Invoicing, More} from '../assets'
 export interface IActions{
     img:string;
     name:string;
 }
 export const actions:IActions[] = [
 	{
-		img: 'Send',
+		img: Send,
 		name: 'Send',
 	},
 	{
-		img: 'Receive',
+		img: Receive,
 		name: 'Receive',
 	},
 	{
-		img: 'Invoicing',
+		img: Invoicing,
 		name: 'Invoicing',
 	},
 	{
-		img: 'More',
+		img: More,
 		name: 'More',
 	},
 ];

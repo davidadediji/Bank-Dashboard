@@ -5,25 +5,25 @@ import OpenPayLogo from '../assets/openpay.svg';
 
 export default function Sidebar() {
 	const activeLink =
-		'flex pl-10 pr-28 gap-5 py-2 items-center bg-openpay-light-blue border-l border-openpay-blue text-openpay-blue';
+		'flex pl-10 pr-20 gap-3 py-2 items-center bg-openpay-light-blue border-l border-openpay-blue text-openpay-blue text-sm';
 	const normalLink =
-		'flex pl-10 pr-28 gap-5 py-2 items-center hover:bg-openpay-light-blue border-l hover:border-openpay-blue text-openpay-gray hover:text-openpay-blue';
+		'flex pl-10 pr-20 gap-3 py-2 items-center hover:bg-openpay-light-blue border-l hover:border-openpay-blue text-openpay-gray hover:text-openpay-blue text-sm';
 	return (
-		<div className='h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto border-r'>
-			<div className=' pl-12 pr-20 flex mt-4 '>
-				<Link to={'/'} className='gap-3 flex items-center text-xl'>
-					<img className='w-8' src={OpenPayLogo} alt='Openpay Logo' />
+		<div className='h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto border-r font-poppins'>
+			<div className=' pl-12 pr-20 flex mt-2'>
+				<Link to={'/'} className='gap-3 flex items-center text-base'>
+					<img className='w-6' src={OpenPayLogo} alt='Openpay Logo' />
 					<span>OpenPay</span>
 				</Link>
 			</div>
-			<div className='text-lg flex flex-col mt-10'>
+			<div className='text-lg flex flex-col mt-6'>
 				{menuItems.map((item) => (
 					<NavLink
 						to={item.path}
 						key={item.itemName}
 						className={({ isActive }) => (isActive ? activeLink : normalLink)}
 					>
-						<item.icon className='text-2xl' /> <span>{item.itemName}</span>
+						<item.icon className='text-lg' /> <span>{item.itemName}</span>
 					</NavLink>
 				))}
 			</div>
@@ -34,7 +34,7 @@ export default function Sidebar() {
 						key={item.itemName}
 						className={({ isActive }) => (isActive ? activeLink : normalLink)}
 					>
-						<item.icon className='text-2xl' /> <span>{item.itemName}</span>
+						<item.icon className='text-lg' /> <span>{item.itemName}</span>
 					</NavLink>
 				))}
 			</div>
