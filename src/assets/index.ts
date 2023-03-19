@@ -13,6 +13,12 @@ import Jane from './images/jane.png'
 import PayPal from './images/paypal.png'
 import Bitcoin from './images/bitcoin.png'
 import Astrid from './images/astrid.png'
+import image2 from './images/ds.png'
+import image3 from './images/image3.png'
+import image4 from './images/image4.png'
+import image5 from './images/image5.png';
+import Dakota from './images/Dakota.png'
+import Group from './images/group-party.png'
 
 
 
@@ -29,5 +35,11 @@ export {
     Receive,
     Invoicing,
     More,
-    Astrid
+    Astrid,
+    image2,
+    image3,
+    image4,
+    image5,
+    Dakota,
+    Group
 }
