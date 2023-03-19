@@ -3,7 +3,7 @@ import { recentTransactions } from '../data/recent-transactions';
 
 export default function RecentTransactions() {
 	return (
-		<>
+		<section>
 			<section className='flex justify-between items-center'>
 				<p className='text-[#000] text-lg'>Recent Transactions</p>
 				<p className=' text-openpay-primary-gray text-xs'>View all &#62;</p>
@@ -32,6 +32,6 @@ export default function RecentTransactions() {
 					))}
 				</tbody>
 			</table>
-		</>
+		</section>
 	);
 }

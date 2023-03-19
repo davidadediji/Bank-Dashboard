@@ -24,7 +24,7 @@ export default function Statictics() {
 												: ''
 										}`}
 								>
-									<img src={item.icon} alt='' />
+									<img className=' w-6' src={item.icon} alt='' />
 								</div>
 								<ul>
 									<li className='text-[#333333] text-sm'>
