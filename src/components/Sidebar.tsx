@@ -17,6 +17,7 @@ export default function Sidebar() {
 				<div className='flex flex-col text-openpay-gray gap-2'>
 					{menuItems.map((item) => (
 						<NavButton
+							key={item.itemName}
 							iconImg={item.icon}
 							navItem={item.itemName}
 							navPath={item.path}
@@ -27,6 +28,7 @@ export default function Sidebar() {
 			<div className=' text-openpay-gray pb-7'>
 				{bottomMenuItems.map((item) => (
 					<NavButton
+						key={item.itemName}
 						iconImg={item.icon}
 						navItem={item.itemName}
 						navPath={item.path}
