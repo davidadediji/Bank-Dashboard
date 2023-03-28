@@ -8,6 +8,7 @@ module.exports = {
 				'gilroy-semibold': ['"Gilroy-Semibold"', 'sans-serif'],
 			},
 			colors: {
+				'openpay-sidebar':'#E8ECF5',
 				'openpay-page-bg':'#EDF1F2',
 				'openpay-light-gray':'#A4B4CB',
 				'openpay-gray': '#131635',
@@ -28,6 +29,9 @@ module.exports = {
 				'openpay-stats-donations': '#E5F7ED',
 				'openpay-stats-watchtime': '#FDF1E2',
 			},
+			// #2F2F32
+			// #E8ECF5
+			// #131635
 			backgroundImage: {
 				'openpay-image': "url('../src/assets/images/visacard.svg')",
 			},

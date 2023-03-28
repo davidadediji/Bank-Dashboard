@@ -1,45 +1,36 @@
-import { IconType } from 'react-icons';
-import { FiHome, FiSettings } from 'react-icons/fi';
-import {TbCreditCard} from 'react-icons/tb'
-import { HiOutlineChat} from 'react-icons/hi';
-import {HiOutlineChartBarSquare} from 'react-icons/hi2'
-import {CgNotes} from 'react-icons/cg';
-import { AiOutlinePieChart, AiOutlineExclamationCircle} from 'react-icons/ai';
-
-
 export const menuItems = [
 	{
-		icon: FiHome,
+		icon: 'dashboard',
 		path:"/",
 		itemName: 'Dashboard',
 	},
 
 	{
-		icon: CgNotes,
+		icon: 'invoice',
 		path:"/invoice",
 		itemName: 'Invoices',
 	},
 
 	{
-		icon: HiOutlineChat,
+		icon: 'messages',
 		path:"/message",
 		itemName: 'Messages',
 	},
 
 	{
-		icon: TbCreditCard,
+		icon: 'wallet',
 		path:'wallet',
 		itemName: 'My Wallets',
 	},
 
 	{
-		icon: AiOutlinePieChart,
+		icon: 'activity',
 		path: '/activity',
 		itemName: 'Activity',
 	},
 
 	{
-		icon: HiOutlineChartBarSquare,
+		icon: 'analytic',
 		path:'/analytics',
 		itemName: 'Analytics',
 	},
@@ -47,12 +38,12 @@ export const menuItems = [
 
 export const bottomMenuItems = [
 	{
-		icon: AiOutlineExclamationCircle,
+		icon: 'help',
 		path: '/help',
 		itemName: 'Get Help',
 	},
 	{
-		icon: FiSettings,
+		icon: 'settings',
 		path: '/settings',
 		itemName: 'Settings',
 	},

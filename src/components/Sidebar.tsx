@@ -1,45 +1,36 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { bottomMenuItems, menuItems } from '../data/menu-items';
 import OpenPayLogo from '../assets/openpay.svg';
+import NavButton from './NavButton';
 
 export default function Sidebar() {
-	const activeLink =
-		'flex pl-10 pr-20 gap-3 py-4 items-center bg-openpay-light-blue border-l border-openpay-blue text-openpay-blue text-sm';
-	const normalLink =
-		'flex pl-10 pr-20 gap-3 py-4 items-center hover:bg-openpay-light-blue border-l hover:border-openpay-blue text-openpay-gray hover:text-openpay-blue text-sm';
 	return (
-		<div className='h-full md:overflow-hidden overflow-auto md:hover:overflow-auto border-r font-poppins'>
-			<div className='pl-12 pr-20 flex my-6'>
-				<Link
-					to={'/'}
-					className='gap-3 flex items-center text-[11.7px] font-semibold'
-				>
-					<img className=' w-6' src={OpenPayLogo} alt='Openpay Logo' />
-					<span>OpenPay</span>
+		<div className=' font-poppins h-full flex flex-col justify-between text-[11.7px]'>
+			<div className=''>
+				<Link to={'/'}>
+					<div className='flex gap-2 py-6 pl-5 items-center'>
+						<img src={OpenPayLogo} alt='' />
+						<span className=' font-bold text-openpay-dark'>OpenPay</span>
+					</div>
 				</Link>
+				<div className='flex flex-col text-openpay-gray gap-2'>
+					{menuItems.map((item) => (
+						<NavButton
+							iconImg={item.icon}
+							navItem={item.itemName}
+							navPath={item.path}
+						/>
+					))}
+				</div>
 			</div>
-			<div className='text-lg flex flex-col mt-6'>
-				{menuItems.map((item) => (
-					<NavLink
-						to={item.path}
-						key={item.itemName}
-						className={({ isActive }) => (isActive ? activeLink : normalLink)}
-					>
-						<item.icon className='text-2xl' />{' '}
-						<span>{item.itemName}</span>
-					</NavLink>
-				))}
-			</div>
-			<div className='text-lg flex flex-col mt-[460px]'>
+			<div className=' text-openpay-gray pb-7'>
 				{bottomMenuItems.map((item) => (
-					<NavLink
-						to={item.path}
-						key={item.itemName}
-						className={({ isActive }) => (isActive ? activeLink : normalLink)}
-					>
-						<item.icon className='text-2xl' /> <span>{item.itemName}</span>
-					</NavLink>
+					<NavButton
+						iconImg={item.icon}
+						navItem={item.itemName}
+						navPath={item.path}
+					/>
 				))}
 			</div>
 		</div>
