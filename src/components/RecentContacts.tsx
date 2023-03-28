@@ -5,9 +5,9 @@ import { HiOutlinePencil } from 'react-icons/hi';
 import { Jane, image2, image3, image4, image5, Dakota, Group } from '../assets';
 export default function RecentContacts() {
 	return (
-		<section className='col-span-2 w-full px-4 pt-3'>
+		<section className=' w-full px-4 pt-3 h-full'>
 			<div className='flex justify-between mb-1'>
-				<p className=' text-sm text-openpay-gray'>Recent Contacts</p>
+				<p className=' text-xs text-openpay-gray'>Recent Contacts</p>
 				<p className='flex gap-5 text-openpay-primary-gray'>
 					<span>
 						<HiOutlinePencil />

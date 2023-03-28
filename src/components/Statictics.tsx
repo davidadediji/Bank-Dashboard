@@ -1,37 +1,17 @@
 import React from 'react';
 import { stats } from '../data/stats';
+import StatCard from './StatCard';
 
 export default function Statictics() {
 	return (
-		<section className=' shadow-lg'>
-			<div className=' px-8 py-12'>
+		<section className=' shadow-lg border border-blue-600 mt-10'>
+			<div className=' mx-8 my-12 border border-lime-400'>
 				<p className=' mb-6 text-openpay-primary-dark text-lg'>Statistics</p>
 				<div className='flex justify-between'>
 					{stats.map((item, index) => {
 						return (
 							<div className='flex items-center' key={index}>
-								<div
-									className={`w-12 h-12 rounded-full flex justify-center items-center mr-5
-										${
-											item.type === 'Customers'
-												? ' bg-openpay-stats-customers'
-												: item.type === 'Remittance'
-												? 'bg-openpay-stats-remittances'
-												: item.type === 'Donation'
-												? 'bg-openpay-stats-donations'
-												: item.type === 'WatchTime'
-												? 'bg-openpay-stats-watchtime'
-												: ''
-										}`}
-								>
-									<img className=' w-6' src={item.icon} alt='' />
-								</div>
-								<ul>
-									<li className='text-[#333333] text-sm'>
-										{item.subscriberCount}
-									</li>
-									<li className='text-[#798BA3] text-xs'>{item.type}</li>
-								</ul>
+								<StatCard icon={item.icon} subscriberCount={item.subscriberCount} type={item.type}/>
 							</div>
 						);
 					})}

@@ -1,5 +1,7 @@
 import React from 'react';
 import { recentTransactions } from '../data/recent-transactions';
+import RTransactions from './RTransactions';
+
 
 export default function RecentTransactions() {
 	return (
@@ -9,6 +11,7 @@ export default function RecentTransactions() {
 				<p className=' text-openpay-primary-gray text-xs'>View all &#62;</p>
 			</section>
 			<table className='w-full text-openpay-primary text-xs border-separate new '>
+				<RTransactions />
 				<tbody>
 					{recentTransactions.map((item) => (
 						<tr className='' key={item.transactionName}>

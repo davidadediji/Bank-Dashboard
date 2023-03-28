@@ -32,6 +32,7 @@ module.exports = {
 			// #2F2F32
 			// #E8ECF5
 			// #131635
+			// #141736
 			backgroundImage: {
 				'openpay-image': "url('../src/assets/images/visacard.svg')",
 			},

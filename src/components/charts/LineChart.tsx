@@ -18,22 +18,11 @@ export default function LineChart() {
 					'Dec 8',
 					'Dec 9',
 				],
-				labels: {
-					style: {
-						fontFamily: 'Gilroy-SemiBold',
-						fontSize: '9px',
-						lineHeight: '9px',
-						color: '#fff',
-					},
-				},
-				axisTicks: {
-					show: false,
-				},
 			},
 			yaxis: {
 				min: 0,
-				range: 10000,
-				tickAmount: 5,
+				range: 5000,
+				tickAmount:5
 			},
 		},
 		series: [
@@ -45,6 +34,6 @@ export default function LineChart() {
 	});
 	return (
 		<div>
-			<Chart options={data.options} series={data.series} type='area' width={350}></Chart>
+			<Chart options={data.options} series={data.series} type='area' width={350} height={259.85}></Chart>
 		</div>);
 }
