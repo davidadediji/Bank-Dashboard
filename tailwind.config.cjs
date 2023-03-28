@@ -8,6 +8,8 @@ module.exports = {
 				'gilroy-semibold': ['"Gilroy-Semibold"', 'sans-serif'],
 			},
 			colors: {
+				'openpay-page-bg':'#EDF1F2',
+				'openpay-light-gray':'#A4B4CB',
 				'openpay-gray': '#131635',
 				'openpay-dark': '#2F2F32',
 				'openpay-blue': '#0177FB',

@@ -4,9 +4,10 @@ import QuickTransfer from '../components/QuickTransfer';
 export default function Transactions() {
   return (
     <section className=" col-span-4">
-      <Card/>
-      <SendMoney/>
-      <QuickTransfer/>
+      <h1>My Card</h1>
+      {/* <Card/> */}
+      {/* <SendMoney/> */}
+      {/* <QuickTransfer/> */}
     </section>
   )
 }

@@ -3,7 +3,7 @@ import VisaLogo from '../assets/icons/visalogo.svg'
 
 export default function Card() {
   return (
-		<section className=' flex flex-col justify-between bg-openpay-image bg-no-repeat w-full h-[14rem] bg-cover text-white rounded-sm px-8 pt-6 pb-5'>
+		<section className=' flex flex-col justify-between bg-openpay-btn-blue h-[6.758rem] w-[12.843rem] text-white rounded-2xl px-8 pt-6 pb-5'>
 			<div>
 				<p className='text-xs'>Name</p>
 				<p className='text-sm'>Carla Rosser</p>
