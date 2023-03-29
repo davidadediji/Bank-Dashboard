@@ -7,21 +7,21 @@ export interface IMenuItems {
 }
 export const stats: IMenuItems[] = [
 	{
-		icon: Customers,
+		icon: Donate,
 		color: 'string',
 		subscriberCount: '220k',
 		type: 'Customers',
 	},
 
 	{
-		icon: Remittance,
+		icon: Customers,
 		color: 'string',
 		subscriberCount: '230k',
 		type: 'Remittance',
 	},
 
 	{
-		icon: Donate,
+		icon: Remittance,
 		color: 'string',
 		subscriberCount: '270k',
 		type: 'Donation',
