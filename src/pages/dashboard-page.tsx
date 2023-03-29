@@ -5,7 +5,7 @@ import Transactions from '../layout/dashboard-transactions';
 
 export default function Dashboard() {
   return (
-		<div className='font-gilroy-semibold w-full h-full border border-orange-500'>
+		<div className='font-gilroy-semibold w-full h-full'>
 			<div>
 				<Navbar />
 			</div>
@@ -22,7 +22,7 @@ export default function Dashboard() {
 					<Transactions />
 				</div>
 				<div
-					className='border border-b-red-600 h-full font-gilroy-semibold'
+					className='h-full font-gilroy-semibold'
 					style={{ flex: 2 }}
 				>
 					<Analytics />

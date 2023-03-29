@@ -5,7 +5,7 @@ import { HiOutlinePencil } from 'react-icons/hi';
 import { Jane, image2, image3, image4, image5, Dakota, Group } from '../assets';
 export default function RecentContacts() {
 	return (
-		<section className=' w-full px-4 pt-3 h-full'>
+		<section className=' w-[40%] px-4 pt-3 h-[258.12px] border border-red-400'>
 			<div className='flex justify-between mb-1'>
 				<p className=' text-xs text-openpay-gray'>Recent Contacts</p>
 				<p className='flex gap-5 text-openpay-primary-gray'>
@@ -44,8 +44,8 @@ export default function RecentContacts() {
 				</p>
 				<ul className=' mb-4'>
 					<li>
-            <img src={Group} alt="" />
-          </li>
+						<img src={Group} alt='' />
+					</li>
 				</ul>
 
 				<div className='flex items-center justify-between'>

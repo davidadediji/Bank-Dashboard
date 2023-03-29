@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import Chart from 'react-apexcharts';
 import { useState } from 'react';
 const Container = styled.div`
-    margin-left: -15px;
-
     .tool-tip-box {
         width: 73.12px;
         height: 43.88px;
@@ -26,7 +24,7 @@ const Container = styled.div`
         font-family: 'Gilroy-Bold';
         font-size: 10.9688px;
         line-height: 13px;
-        color: #FFFFFF;
+        color: #FFF;
     }
 `;
 
@@ -121,9 +119,8 @@ export default function LineChart() {
 				series={values.series}
 				type='area'
 				width='380'
-				height='200'
+				height='210.45'
 			/>
-			​
 		</Container>
 	);
 };
